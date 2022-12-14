@@ -1,0 +1,44 @@
+
+Requisição HTTP
+
+URL: https://pokeapi.co/api/v2/pokemon?type=grass&name=i
+    ${IP}/${path = caminho de identificação do recurso}
+
+    IP: https://pokeapi.co
+    path: /api/v2/pokemon
+
+Request Method: GET (buscar) | POST (inserir) | PUT (atualizar) | DELETE (deletar)
+
+    Query String: Caso tenha é identificada pela "?" (seguindo chave + valor) -> ?type=grass&name=i (são os parâmetros que auxiliam)
+
+
+    Headers são uma espécie de "configuração" da nossa requisição, e por lá passamos os dados para "configurarmos" essa requisição.
+
+Request Headers: é a configuração da nossa API
+    Configuração
+    Authorization: Basic / Bearer
+
+    accept-language:
+        en-US
+        en;q=0.9
+        pt;q=0.8
+
+    Body: é o corpo para realizar envio de dados.
+
+    Exemplo: Method POST ou PUT
+        Request Headers
+        content-type: application/json
+
+Body
+{
+    "name": "Teste"
+}
+
+RESPOSTA DO SERVIDOR:
+    status code: Retorna um valor que significa o resultado da solicitação.
+    
+    Response Headers
+    Diz como a resposta está configurada.
+
+    Request Body
+    É a resposta da solicitação.
